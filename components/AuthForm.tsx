@@ -20,6 +20,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { tree } from "next/dist/build/templates/app-page";
 import { createAccount } from "@/lib/actions/user.actions";
+import OTPModal from "./OTPModal";
 
 type FormType = "sign-in" | "sign-up";
 
@@ -153,6 +154,10 @@ const AuthForm = ({ type }: { type: FormType }) => {
       </Form>
 
       {/* OTP verification */}
+
+      {accountId && (
+        <OTPModal email={form.getValues("email")} accountId={accountId} />
+      )}
     </>
   );
 };
