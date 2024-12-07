@@ -7,22 +7,22 @@ export const navItems = [
   {
     name: "Documents",
     icon: "/assets/icons/documents.svg",
-    url: "/documents",
+    url: "/Documents",
   },
   {
     name: "Images",
     icon: "/assets/icons/images.svg",
-    url: "/images",
+    url: "/Images",
   },
   {
     name: "Media",
     icon: "/assets/icons/video.svg",
-    url: "/media",
+    url: "/Media",
   },
   {
     name: "Others",
     icon: "/assets/icons/others.svg",
-    url: "/others",
+    url: "/Others",
   },
 ];
 

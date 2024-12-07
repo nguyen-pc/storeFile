@@ -15,6 +15,7 @@ interface Props {
 
 const Sidebar = ({ fullName, avatar, email }: Props) => {
   const pathname = usePathname();
+  console.log(pathname);
   return (
     <aside className="sidebar">
       <Link href="/">
@@ -38,7 +39,7 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
       <nav className="sidebar-nav">
         <ul className="flex flex-1 flex-col gap-6">
           {navItems.map(({ url, name, icon }) => (
-            <Link href={name} key={url} className="lg:w-full">
+            <Link href={url} key={url} className="lg:w-full">
               <li
                 className={cn(
                   "sidebar-nav-item",
