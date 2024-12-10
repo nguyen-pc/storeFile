@@ -3,7 +3,6 @@
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
@@ -23,6 +22,7 @@ interface Props {
   accountId: string;
   fullName: string;
   email: string;
+  avatar: string;
 }
 
 const MobileNavigation = ({
