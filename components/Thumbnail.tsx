@@ -6,8 +6,8 @@ interface Props {
   type: string;
   extension: string;
   url?: string;
-  imageClassName: string;
-  className: string;
+  imageClassName?: string;
+  className?: string;
 }
 
 const Thumbnail = ({
